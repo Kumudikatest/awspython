@@ -97,14 +97,43 @@
         "children": [],
         "isRemovable": true,
         "filePath": "Authorizer.js"
+      },
+      "6c4bcffa-443d-48bf-8fcb-af478b59305d": {
+        "id": "6c4bcffa-443d-48bf-8fcb-af478b59305d",
+        "parent": null,
+        "name": "newpy.py",
+        "type": "PYTHON_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "newpy.py",
+        "cursor": {
+          "lineNumber": 11,
+          "column": 19
+        },
+        "config": {
+          "runtime": "python3.8",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": [],
+          "name": "newpy"
+        },
+        "triggers": [
+          {
+            "resourceName": "apigusEast1TestAPIget",
+            "config": {}
+          }
+        ]
       }
     },
     "openFiles": [
       "dd8f7a4b-1b7b-447f-a0c9-45c877585cf6",
       "c51a21fd-29a2-4e00-b54c-80a720162d6c",
-      "39b9aed6-2257-4581-9e76-fb147af64d53"
+      "39b9aed6-2257-4581-9e76-fb147af64d53",
+      "6c4bcffa-443d-48bf-8fcb-af478b59305d"
     ],
-    "currentFileId": "dd8f7a4b-1b7b-447f-a0c9-45c877585cf6",
+    "currentFileId": "6c4bcffa-443d-48bf-8fcb-af478b59305d",
     "resources": {
       "apigusEast1TestAPItestdbputget": {
         "name": "apigusEast1TestAPItestdbputget",
@@ -163,6 +192,39 @@
         "name": "translateResource",
         "type": "Translate",
         "config": {}
+      },
+      "apigusEast1TestAPIget": {
+        "name": "apigusEast1TestAPIget",
+        "type": "API_GATEWAY",
+        "config": {
+          "selectedRegion": "us-east-1",
+          "apiMode": 1,
+          "apiName": "TestAPI",
+          "apiId": "0itznun7w3",
+          "endpointType": "EDGE",
+          "rootResourceId": "h2lelj6j7k",
+          "existingResources": {
+            "/MyLambda": "98nqbj",
+            "/testdbput": "bu1jy0",
+            "/": "h2lelj6j7k",
+            "/newchange/test": "k6pdhn",
+            "/newchange": "q1ox7l",
+            "/testWithSlash": "q4m4g1",
+            "/testtwospeciallambda": "q4szm3",
+            "/testtwospecialkumutest": "wey3lk"
+          },
+          "resourceMode": 1,
+          "resourcePath": "/",
+          "resourceName": "",
+          "resourceId": "h2lelj6j7k",
+          "restMethod": "GET",
+          "proxyIntegration": false,
+          "enableCORS": false,
+          "stageMode": 1,
+          "stageName": "test",
+          "stageDeploymentId": "tjw9dc",
+          "mode": 1
+        }
       }
     },
     "customTemplate": {
@@ -230,7 +292,7 @@
     "platform": "AWS",
     "language": "python",
     "platformRegions": {},
-    "lastSave": 1587556955097
+    "lastSave": 1587557876989
   },
   "VCS_STATE": {
     "provider": "GitHub",
