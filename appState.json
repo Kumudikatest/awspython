@@ -1,0 +1,86 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "dd8f7a4b-1b7b-447f-a0c9-45c877585cf6": {
+        "id": "dd8f7a4b-1b7b-447f-a0c9-45c877585cf6",
+        "parent": null,
+        "name": "awspython.py",
+        "type": "PYTHON_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "awspython.py",
+        "cursor": {
+          "lineNumber": 12,
+          "column": 35
+        },
+        "config": {
+          "runtime": "python3.8",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": [],
+          "name": "awspython"
+        },
+        "triggers": [],
+        "testCases": {
+          "a2da0928-5b54-4dfc-af37-2e068be75597": {
+            "id": "a2da0928-5b54-4dfc-af37-2e068be75597",
+            "name": "Test event",
+            "functionId": "dd8f7a4b-1b7b-447f-a0c9-45c877585cf6",
+            "event": "{\"key1\": \"value1\", \"key2\": \"value2\", \"key3\": \"value3\"}",
+            "eventTemplate": "hello-world"
+          }
+        }
+      }
+    },
+    "openFiles": [
+      "dd8f7a4b-1b7b-447f-a0c9-45c877585cf6"
+    ],
+    "currentFileId": "dd8f7a4b-1b7b-447f-a0c9-45c877585cf6",
+    "resources": {},
+    "customTemplate": {
+      "overrideDefault": false,
+      "dialect": null,
+      "definitions": null
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {
+        "requests": {
+          "name": "requests",
+          "language": "python",
+          "version": "2.18.0",
+          "dev": false,
+          "notRemovable": false
+        }
+      }
+    }
+  },
+  "PROJECT_META": {
+    "projectName": "awspython",
+    "projectDescription": "smoke",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east-1",
+    "platform": "AWS",
+    "language": "python",
+    "platformRegions": {},
+    "lastSave": 1587549653259
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "awspython",
+      "url": "https://github.com/Kumudikatest/awspython"
+    }
+  }
+}
